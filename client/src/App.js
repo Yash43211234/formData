@@ -15,7 +15,7 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/submit', formData);
+      await axios.post('https://formdata-bfj7.onrender.com/submit', formData);
       alert('Form submitted successfully');
       setFormData({ name: '', email: '', message: '' });
     } catch (err) {
